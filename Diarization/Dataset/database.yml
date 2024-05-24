@@ -1,0 +1,20 @@
+Databases:
+  MyDatabase: 
+    - audio/{uri}.wav 
+Protocols:
+  MyDatabase:
+    SpeakerDiarization:
+      MyProtocol:
+        train:
+            uri: train.lst
+            annotation: train.rttm
+            annotated: train.uem
+        development:
+            uri: development.lst
+            annotation: dev.rttm
+            annotated: dev.uem
+        test:
+            uri: test.lst
+            annotation: test.rttm
+            annotated: test.uem
+
