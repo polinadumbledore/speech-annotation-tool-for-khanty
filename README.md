@@ -40,5 +40,29 @@ We achieved the following results:
 
 ## Repository Structure
 
-In this repository, we store the code for our project and some of the data. This repository is structured as follows:
+This repository contains the code and some data for our project. It is structured as follows:
+
+### ASR (Automatic Speech Recognition)
+1. [`creating_asr_dataset.ipynb`](ASR/creating_asr_dataset.ipynb) - This notebook details the process of converting audio data and corresponding annotations into a dataset format compatible with training a Whisper model.
+2. [`fine_tune_asr.ipynb`](ASR/fine_tune_asr.ipynb) - This notebook covers fine-tuning the Whisper multilingual small model on Khanty data.
+
+The audio data and annotations used for fine-tuning the ASR model for Khanty are available on [Hugging Face](https://huggingface.co/datasets/numblilbug/khanty_asr), formatted for training with the transformers library.
+
+### Diarization
+1. Dataset folder:
+   - [`database.yml`](Diarization/Dataset/database.yml) - Defines the structure of the files used for fine-tuning the pyannote.audio diarization model.
+   - [`train.rttm`](Diarization/Dataset/train.rttm), [`test.rttm`](Diarization/Dataset/test.rttm), [`dev.rttm`](Diarization/Dataset/dev.rttm) - Contain the start and end times of speech segments in the reference audios for diarization.
+   - [`train.uem`](Diarization/Dataset/train.uem), [`test.uem`](Diarization/Dataset/test.uem), [`dev.uem`](Diarization/Dataset/dev.uem) - Specify the duration of audio in the corresponding datasets.
+   - [`train.lst`](Diarization/Dataset/train.lst), [`test.lst`](Diarization/Dataset/test.lst), [`development.lst`](Diarization/Dataset/development.lst) - List the files in the corresponding datasets.
+2. [`making_database.ipynb`](Diarization/making_database.ipynb) - Describes the process of converting audio and their annotations for speech turns and speakers into a pyannote.database format compatible with fine-tuning a pyannote.audio diarization model.
+3. [`fine_tune_diariz.ipynb`](Diarization/fine_tune_diariz.ipynb) - Details the process of fine-tuning the pyannote.audio diarization model.
+
+The audio files used for training (with annotations available in the dataset folder) are available upon request.
+
+### SLID (Spoken Language Identification)
+1. [`speechbraintesting.ipynb`](SLID/speechbraintesting.ipynb) - This notebook tests the accuracy of the SpeechBrain spoken language identification model.
+
+### Diarization and ASR Interface
+1. [`app.py`](Diarization%20and%20ASR%20interface/app.py) - Contains the code for launching the interface for the diarization and ASR model fine-tuned for Khanty.
+2. [`epoch=4.ckpt`](Diarization%20and%20ASR%20interface/epoch=4.ckpt) - Contains the fine-tuned segmentation model for diarization.
 
