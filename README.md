@@ -4,7 +4,7 @@ Despite significant advancements in speech processing technologies, including au
 
 [^1]: Park, T. J., Kanda, N., Dimitriadis, D., Han, K. J., Watanabe, S., & Narayanan, S. (2022). A review of speaker diarization: Recent advances with deep learning. Computer Speech & Language, 72, 101317.
 [^2]: Li, J. (2022). Recent advances in end-to-end automatic speech recognition. APSIPA Transactions on Signal and Information Processing, 11.
-[^3]: Russian Federal State Statistics Service. (2010). Language Proficiency of the Population of the Russian Federation. https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol4/pub-04-05.pdf
+[^3]: Russian Federal State Statistics Service. (2010). [Language Proficiency of the Population of the Russian Federation.](https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol4/pub-04-05.pdf)
 
 ## Project Goals
 
@@ -53,7 +53,9 @@ This repository contains the code and some data for our project. It is structure
 > [!NOTE]
 > The audio data and annotations used for fine-tuning the ASR model for Khanty are available on [Hugging Face](https://huggingface.co/datasets/numblilbug/khanty_asr), formatted for training with the transformers library.
 
-### Diarization
+<details>
+<summary>### Diarization</summary>
+   
 1. Dataset folder:
    - [`database.yml`](Diarization/Dataset/database.yml) - Defines the structure of the files used for fine-tuning the pyannote.audio diarization model.
    - [`train.rttm`](Diarization/Dataset/train.rttm), [`test.rttm`](Diarization/Dataset/test.rttm), [`dev.rttm`](Diarization/Dataset/dev.rttm) - Contain the start and end times of speech segments in the reference audios for diarization.
@@ -61,6 +63,8 @@ This repository contains the code and some data for our project. It is structure
    - [`train.lst`](Diarization/Dataset/train.lst), [`test.lst`](Diarization/Dataset/test.lst), [`development.lst`](Diarization/Dataset/development.lst) - List the files in the corresponding datasets.
 2. [`making_database.ipynb`](Diarization/making_database.ipynb) - Describes the process of converting audio and their annotations for speech turns and speakers into a pyannote.database format compatible with fine-tuning a pyannote.audio diarization model.
 3. [`fine_tune_diariz.ipynb`](Diarization/fine_tune_diariz.ipynb) - Details the process of fine-tuning the pyannote.audio diarization model.
+
+</details>
 
 > [!NOTE]
 > The audio files used for training (with annotations available in the dataset folder) are available upon request.
