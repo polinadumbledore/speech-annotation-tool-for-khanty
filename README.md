@@ -1,6 +1,10 @@
 # Development of a Speech Annotation Tool Using the Example of Kazym Northern Khanty Language
 
-Despite significant advancements in speech processing technologies, including automatic speech recognition, diarization, and spoken language identification (e.g., Park et al., 2022; Li, 2022), many low-resource languages remain underrepresented in this domain. In this project, we develop several speech processing tools for Kazym Khanty, a low-resource Finno-Ugric language spoken by approximately 9,500 people in western Siberia, according to the 2010 census (Russian Federal State Statistics Service, 2010).
+Despite significant advancements in speech processing technologies, including automatic speech recognition, diarization, and spoken language identification (e.g., Park et al., 2022[^1]; Li, 2022[^2]), many low-resource languages remain underrepresented in this domain. In this project, we develop several speech processing tools for Kazym Khanty, a low-resource Finno-Ugric language spoken by approximately 9,500 people in western Siberia, according to the 2010 census (Russian Federal State Statistics Service, 2010[^3]).
+
+[^1]: Park, T. J., Kanda, N., Dimitriadis, D., Han, K. J., Watanabe, S., & Narayanan, S. (2022). A review of speaker diarization: Recent advances with deep learning. Computer Speech & Language, 72, 101317.
+[^2]: Li, J. (2022). Recent advances in end-to-end automatic speech recognition. APSIPA Transactions on Signal and Information Processing, 11.
+[^3]: Russian Federal State Statistics Service. (2010). Language Proficiency of the Population of the Russian Federation. https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol4/pub-04-05.pdf
 
 ## Project Goals
 
