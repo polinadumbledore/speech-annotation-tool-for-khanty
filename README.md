@@ -46,7 +46,8 @@ This repository contains the code and some data for our project. It is structure
 1. [`creating_asr_dataset.ipynb`](ASR/creating_asr_dataset.ipynb) - This notebook details the process of converting audio data and corresponding annotations into a dataset format compatible with training a Whisper model.
 2. [`fine_tune_asr.ipynb`](ASR/fine_tune_asr.ipynb) - This notebook covers fine-tuning the Whisper multilingual small model on Khanty data.
 
-The audio data and annotations used for fine-tuning the ASR model for Khanty are available on [Hugging Face](https://huggingface.co/datasets/numblilbug/khanty_asr), formatted for training with the transformers library.
+> [!NOTE]
+> The audio data and annotations used for fine-tuning the ASR model for Khanty are available on [Hugging Face](https://huggingface.co/datasets/numblilbug/khanty_asr), formatted for training with the transformers library.
 
 ### Diarization
 1. Dataset folder:
@@ -57,7 +58,8 @@ The audio data and annotations used for fine-tuning the ASR model for Khanty are
 2. [`making_database.ipynb`](Diarization/making_database.ipynb) - Describes the process of converting audio and their annotations for speech turns and speakers into a pyannote.database format compatible with fine-tuning a pyannote.audio diarization model.
 3. [`fine_tune_diariz.ipynb`](Diarization/fine_tune_diariz.ipynb) - Details the process of fine-tuning the pyannote.audio diarization model.
 
-The audio files used for training (with annotations available in the dataset folder) are available upon request.
+> [!NOTE]
+> The audio files used for training (with annotations available in the dataset folder) are available upon request.
 
 ### SLID (Spoken Language Identification)
 1. [`speechbraintesting.ipynb`](SLID/speechbraintesting.ipynb) - This notebook tests the accuracy of the SpeechBrain spoken language identification model.
