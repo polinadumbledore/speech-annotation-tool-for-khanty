@@ -1,4 +1,4 @@
-<font color="blue"> # Development of a Speech Annotation Tool Using the Example of Kazym Northern Khanty Language </font>
+# Development of a Speech Annotation Tool Using the Example of Kazym Northern Khanty Language 
 
 Despite significant advancements in speech processing technologies, including automatic speech recognition, diarization, and spoken language identification (e.g., Park et al., 2022[^1]; Li, 2022[^2]), many low-resource languages remain underrepresented in this domain. In this project, we develop several speech processing tools for Kazym Khanty, a low-resource Finno-Ugric language spoken by approximately 9,500 people in western Siberia, according to the 2010 census (Russian Federal State Statistics Service, 2010[^3]).
 
